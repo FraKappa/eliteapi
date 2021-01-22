@@ -3,7 +3,7 @@
 eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.
 
 ## Installation
-To install **eliteapi**, run the following command into your terminal from your bot folder:
+To install **eliteapi**, run the following command into your terminal:
 
 ```
 pip install eliteapi
