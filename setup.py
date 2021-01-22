@@ -8,10 +8,10 @@ setup(
     description='eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.',
     author='Kappa',
     author_email='f.cappetti.05@gmail.com',
-    url='https://github.com/KappaOnGit/eliteapi',   # Provide either the link to your github or to your website
-    download_url='https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
-    keywords=['eliteapi', 'elite'],   # Keywords that define your package best
-    install_requires=[            # I get to this in a second
+    url='https://github.com/KappaOnGit/eliteapi',
+    download_url='https://github.com/FraKappa/eliteapi/archive/v_01.tar.gz',
+    keywords=['eliteapi', 'elite'],
+    install_requires=[
         'requests',
     ],
     classifiers=[
