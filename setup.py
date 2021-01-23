@@ -6,6 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name='eliteapi',
     packages=[''],
+    package_dir={'': 'src'},
     version='0.2',
     license='MIT',
     description='eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.',
