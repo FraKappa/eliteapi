@@ -12,7 +12,7 @@ pip install eliteapi
 ## Example Usage
 
 ```py
-from eliteapi.eliteapi import EliteCreative
+from eliteapi import EliteCreative
 
 elite = EliteCreative('api-key')  # Generate your API key at https://elitescrims.xyz/developer
 
