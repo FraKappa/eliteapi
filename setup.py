@@ -1,15 +1,15 @@
 from setuptools import setup
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open("README.md", "r", encoding="utf-8") as readme:
+    long_description = readme.read()
 
 setup(
     name='eliteapi',
     packages=[''],
     package_dir={'': 'src'},
-    version='0.2',
+    version='0.4',
     license='MIT',
-    description='eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.',
+    description='A simple Python wrapper for Elite Creative allowing you to easly interact with the API.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Kappa',
