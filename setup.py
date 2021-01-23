@@ -1,4 +1,7 @@
-from distutils.core import setup
+from setuptools import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setup(
     name='eliteapi',
@@ -6,6 +9,8 @@ setup(
     version='0.1',
     license='MIT',
     description='eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Kappa',
     author_email='f.cappetti.05@gmail.com',
     url='https://github.com/KappaOnGit/eliteapi',

@@ -1,0 +1,4 @@
+dist/
+eliteapi.egg-info/
+MANIFEST
+eliteapi/__pycache__/
