@@ -6,39 +6,32 @@ URL = 'https://elitescrims.xyz/api/v1/'
 
 class EliteCreative:
     def __init__(self, key):
-        self.headers = {'authorization': key}
+        self.session = requests.Session()
+        self.session.headers.update({'authorization': key})
 
     def get_user_stats(self, user_id):
-        response = requests.get(URL + f'stats/{user_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'stats/%s' % user_id).json()
 
     def get_user_queue(self, user_id):
-        response = requests.get(URL + f'queue/{user_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'queue/%s' % user_id).json()
 
     def in_game(self, user_id):
-        response = requests.get(URL + f'ingame/{user_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'ingame/%s' % user_id).json()
 
     def get_match_by_game_id(self, game_id):
-        response = requests.get(URL + f'match-by-id/{game_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'match-by-id/%s' % game_id).json()
 
     def get_match_by_user_id(self, user_id):
-        response = requests.get(URL + f'match-by-user/{user_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'match-by-user/%s' % user_id).json()
 
     def get_team_by_team_id(self, team_id):
-        response = requests.get(URL + f'team-by-id/{team_id}', headers=self.headers)
-
-        return response.json()
+        return self.session.get(URL + 'team-by-id/%s' % team_id).json()
 
     def get_team_by_user_id(self, user_id):
-        response = requests.get(URL + f'team-by-user/{user_id}', headers=self.headers)
+        return self.session.get(URL + 'team-by-user/%s' % user_id).json()
 
-        return response.json()
+
+if __name__ == '__main__':
+    elite = EliteCreative('8e1850427fc6f9d10a299d4ed79c4f2cabadbd34')
+
+    print(elite.get_user_stats('528823004789080095'))
