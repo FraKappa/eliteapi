@@ -29,9 +29,3 @@ class EliteCreative:
 
     def get_team_by_user_id(self, user_id):
         return self.session.get(URL + 'team-by-user/%s' % user_id).json()
-
-
-if __name__ == '__main__':
-    elite = EliteCreative('8e1850427fc6f9d10a299d4ed79c4f2cabadbd34')
-
-    print(elite.get_user_stats('528823004789080095'))
