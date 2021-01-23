@@ -3,7 +3,7 @@
 eliteapi is a Python wrapper for Elite Creative allowing you to easly interact with the API.
 
 ## Installation
-To install **eliteapi**, run the following command into your terminal from your bot folder:
+To install **eliteapi**, run the following command into your terminal:
 
 ```
 pip install eliteapi
@@ -63,7 +63,7 @@ elite.get_match_by_user_id('user_id')
 ## get_team_by_team_id(team_id)
 Return information about a team by it's Id
 ```py
-elite.getTeamByTeamId('team-id')
+elite.get_team_by_team_id('team-id')
 ```
 
 ## get_team_by_user_id(user_id)
